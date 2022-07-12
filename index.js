@@ -1,6 +1,18 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let i=0; i<array.length; i++){
+    for(let j=i+1; j<=array.length;){
+      if (array[j]+array[i]===target){
+        return true
+      } else{
+        return false
+      }
+    }
+  }
 }
+
+
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -8,6 +20,18 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  [1, 2, 5, 6, 7] 12
+  for(let i = 0; i<arr.length; i++){
+    if(arr.include(target-arr[i]){
+      return array[i], target-arr[1] }
+    
+  }
+12 -1 => if arr contains 10 - yes return 
+
+
+
+
+
 */
 
 /*
